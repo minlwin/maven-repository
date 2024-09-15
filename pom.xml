@@ -11,7 +11,7 @@
 	</parent>
 	<version>0.1.0-SNAPSHOT</version>
 	<groupId>com.jdc</groupId>
-	<artifactId>maven-registry</artifactId>
+	<artifactId>maven-repository</artifactId>
 	<packaging>jar</packaging>
 	<name>maven-registry</name>
 	<description>Maven Package Action Demo</description>
