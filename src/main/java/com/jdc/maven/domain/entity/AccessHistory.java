@@ -20,6 +20,8 @@ public class AccessHistory {
 	private System system;
 	private Status status;
 	
+	private String remark;
+	
 	public enum System {
 		Admin, Cusmer, Agent
 	}
