@@ -14,6 +14,9 @@ import jakarta.persistence.OneToOne;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
+/**
+ * Employee Entity
+ */
 @Data
 @Entity
 @EqualsAndHashCode(callSuper = false)

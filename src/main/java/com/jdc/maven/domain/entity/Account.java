@@ -8,6 +8,9 @@ import jakarta.persistence.Id;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
+/**
+ * Account Entity for Security Purpose
+ */
 @Data
 @Entity
 @EqualsAndHashCode(callSuper = false)

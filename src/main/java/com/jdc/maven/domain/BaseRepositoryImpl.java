@@ -29,20 +29,17 @@ public class BaseRepositoryImpl<T, ID> extends SimpleJpaRepository<T, ID> implem
 
 	@Override
 	public <R> List<R> searchAll(Function<CriteriaBuilder, CriteriaQuery<R>> queryFunc) {
-		// TODO Auto-generated method stub
-		return null;
+		return em.createQuery(queryFunc.apply(em.getCriteriaBuilder())).getResultList();
 	}
 
 	@Override
 	public int update(Function<CriteriaBuilder, CriteriaUpdate<T>> queryFunc) {
-		// TODO Auto-generated method stub
-		return 0;
+		return em.createQuery(queryFunc.apply(em.getCriteriaBuilder())).executeUpdate();
 	}
 
 	@Override
 	public int delete(Function<CriteriaBuilder, CriteriaDelete<T>> queryFunc) {
-		// TODO Auto-generated method stub
-		return 0;
+		return em.createQuery(queryFunc.apply(em.getCriteriaBuilder())).executeUpdate();
 	}
 
 }
