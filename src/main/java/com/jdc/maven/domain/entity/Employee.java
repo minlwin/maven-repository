@@ -33,4 +33,6 @@ public class Employee extends BaseEntity {
 	private LocalDateTime resignAt;
 	
 	private ContactInfo contact;
+	
+	private boolean activated;
 }
